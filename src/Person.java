@@ -9,13 +9,8 @@ abstract public class Person implements Payable, Comparable<Person>{
     public String ToString(){
         return id+name+surname;
     }
-    public Person() {
-        this.id = nextId++;
-    }
-    public Person(String name, String surname){
-        this();
-        this.name = name;
-        this.surname = surname;
+    public Person() {this.id = nextId++; this.name = ""; this.surname = "";}
+    public Person(String name, String surname){ this.id = nextId++; this.name = name; this.surname = surname;
     }
 
     public void setName(String name){

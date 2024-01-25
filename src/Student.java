@@ -6,10 +6,7 @@ public class Student extends Person{
         super();
     }
 
-    public Student(String name, String surname, double gpa) {
-        super(name, surname);
-        this.gpa = gpa;
-    }
+    public Student(String name, String surname, double gpa) { super(name, surname); this.gpa = gpa;}
 
     public double getGpa() {
         return gpa;
